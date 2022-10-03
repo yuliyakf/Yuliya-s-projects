@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+      
+   <link rel="stylesheet" href="styles.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1 class="text-center">Yuliya's projects</h1>
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-sm-4 bg-warning p-3 text-center">
+            <!--Stopwatch-->
+            <h2>Stopwatch</h2>
+            <div id="stopwatch">
+            </div>
+            <button type="button" id="startbtn" class="btn btn-outline-dark btn-lg m-3">Start</button>
+            <button type="button" id="stopbtn" class="btn btn-outline-dark btn-lg m-3">Stop</button>
+            <button type="button" id="resetbtn" class="btn btn-outline-dark btn-lg m-3">Reset</button>
+            <!--Clock-->
+            <h2>Clock</h2>
+            <span id="clock" class="fs-1 text-dark "></span>
+            <!--Counter-->
+            <h2>Counter</h2>
+            <div id= 'value'>0</div>
+            <button class="btn2 btn-hero decrease1" id='decrease'>Decrease</button>
+            <button class="btn2 btn-hero reset4" id="reset3">Reset</button>
+            <button class="btn2 btn-hero increase1" id="increase">Increase</button>
+
+         </div>
+
+         <div class="col-sm-4 bg-secondary p-3 text-center text-white">
+            <h2>Calculator 1</h2>
+            <div class="calculator-grid">
+               <div class="output">
+                  <div data-previous-operand class="previous-operand"></div>
+                  <div data-current-operand class="current-operand"></div>
+               </div>
+               <button data-all-clear class="span-two">AC</button>
+               <button data-delete>DEL</button>
+               <button data-operation>÷</button>
+               <button data-number>7</button>
+               <button data-number>8</button>
+               <button data-number>9</button>
+               <button data-operation>x</button>
+               <button data-number>4</button>
+               <button data-number>5</button>
+               <button data-number>6</button>
+               <button data-operation>+</button>
+               <button data-number>1</button>
+               <button data-number>2</button>
+               <button data-number>3</button>
+               <button data-operation>-</button>
+               <button data-number>.</button>
+               <button data-number>0</button>
+               <button class="span-two" data-equals>=</button>
+            </div>
+         </div>
+         <div class="col-sm-4 bg-warning p-3 text-center text-white">
+            <h3>Color Matching Game <span id="color-display">RGB</span></h3>
+            <div id="stripe">
+               <button id="reset2">New Color</button>
+               <span id="message"></span>
+               <button class="mode">Easy</button>
+               <button class="mode selected">Hard</button>
+            </div>
+            <div id="container">
+               <div class="square"></div>
+               <div class="square"></div>
+               <div class="square"></div>
+               <div class="square"></div>
+               <div class="square"></div>
+               <div class="square"></div>
+            </div>
+
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4 bg-secondary p-3 text-center text-white ">
+            <div class=colorChange>
+               <div class="nav-center">
+                  <h4>Color Flipper</h4>
+               </div>
+               <main>
+                  <div class="container">
+                     <h2>background color : <span class="color">#f1f5f8</span></h2>
+                     <button class="btn btn-hero" id="btn">Simple colors</button>
+                     <button class="btn btn-hero" id="btn1">Hex colors</button>
+                  </div>
+               </main>
+            </div>
+         </div>
+         <div class="col-sm-4 bg-warning p-3 text-center">
+            <div class="title">
+               <h2>Our Reviews</h2>
+               <hr>
+            </div>
+            <article class="review">
+               <div class="img-container">
+                  <img src="images/person-1.jpeg" id="person-img" alt=""/>
+               </div>
+               <h4 id="author">Michael Jones</h4>
+               <p id="job">UX DESIGNER</p>
+               <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem illo, illum eveniet atque inventore cumque amet quos aliquam dolore fugiat consequuntur, harum nesciunt fuga repellat cum iste quo itaque debitis.</p>
+               <div class="button-container">
+                  <button class="prev-btn">
+                     <i class="prev">Prev</i>
+                  </button>
+                  <button class="next-btn">
+                     <i class="next">Next</i>
+                  </button>
+               </div>
+               <button class="random-btn">surprise me</button>
+            </article>
+         </div>
+         <div class="col-sm-4 bg-secondary p-3 text-center text-white"></div>
+      </div>
+   </div>
+
+
+   <script src="app.js"></script>
+</body>
+
+</html>

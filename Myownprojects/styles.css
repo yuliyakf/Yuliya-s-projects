@@ -1,0 +1,245 @@
+.calculator {
+   padding: 20px;
+   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+   border-radius: 1px;
+   background-color: white;
+}
+
+.input {
+   border: 1px solid #ddd;
+   border-radius: 1px;
+   height: 60px;
+   padding-right: 15px;
+   padding-top: 10px;
+   text-align: right;
+   width: 350px;
+   margin-left: 67px;
+   font-size: 2.5rem;
+   overflow-x: auto;
+   transition: all .2s ease-in-out;
+}
+
+.input:hover {
+   border: 1px solid #bbb;
+   box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.operators div {
+   display: inline-block;
+   border: 1px solid #bbb;
+   border-radius: 1px;
+   width: 80px;
+   text-align: center;
+   padding: 10px;
+   margin: 20px 4px 10px 2px;
+   cursor: pointer;
+   background-color: #ddd;
+   transition: border-color .2s ease-in-out background-color .2s box-shadow .2s;
+}
+
+.operators div:hover {
+   background-color: #ddd;
+   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+   border-color: #aaa;
+}
+
+.operators div:active {
+   font-weight: bold;
+}
+
+.leftPanel {
+   display: inline-block;
+}
+
+.numbers div {
+   display: inline-block;
+   border: 1px solid #ddd;
+   border-radius: 1px;
+   width: 80px;
+   text-align: center;
+   padding: 10px;
+   margin: 10px 4px 10px 0;
+   cursor: pointer;
+   background-color: #f9f9f9;
+   transition: border-color .2s ease-in-out background-color .2s box-shadow .2s;
+}
+
+.numbers div:hover {
+   background-color: #f1f1f1;
+   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+   border-color: #bbb;
+}
+
+.numbers div:active {
+   font-weight: bold;
+}
+
+div.equal {
+   display: inline-block;
+   border: 1px solid #3079ED;
+   border-radius: 1px;
+   width: 17%;
+   text-align: center;
+   padding: 109px 8px;
+   margin: 10px 6px 10px 0;
+   vertical-align: top;
+   cursor: pointer;
+   color: #fff;
+   background-color: #4d90fe;
+   transition: all .2s ease-in-out;
+}
+
+div.equal:hover {
+   background-color: #307CF9;
+   box-shadow: 0px 1p 4px 0px rgba(0, 0, 0, 0.2);
+   border-color: #1857BB;
+}
+
+div.equal:active {
+   font-weight: bold;
+}
+
+.calculatorKeys {
+   background-color: #999;
+   display: grid;
+   grid-gap: 1px;
+   grid-template-columns: repeat(4, 1fr);
+}
+
+input,
+textarea,
+button {
+   border: 0;
+   border-radius: 0;
+   background-color: white;
+   outline: none;
+   appearance: none;
+
+}
+
+.calculator {
+   border-radius: 12px;
+   box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.2);
+   overflow: hidden;
+}
+
+/* Calculator 2 */
+
+.calculator-grid {
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   grid-template-columns: repeat(4, 100px);
+   grid-template-rows: minmax(120px, auto) repeat(5, 62px);
+}
+
+.calculator-grid>button {
+   cursor: pointer;
+   font-size: 2rem;
+   border: 1px solid white;
+   outline: none;
+   background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid>button:hover {
+   background-color: rgba(255, 255, 255, .90);
+}
+
+.span-two {
+   grid-column: span 2;
+}
+
+.output {
+   grid-column: 1 /-1;
+   background-color: rgba(0, 0, 0, 0.75);
+   display: flex;
+   align-items: flex-end;
+   justify-content: space-around;
+   flex-direction: column;
+   padding: 10px;
+   word-wrap: break-word;
+   word-break: break-all;
+}
+
+.output .previous-operand {
+   color: rgba(255, 255, 255, .75);
+   font-size: 1.5rem;
+}
+
+.output .current-operand {
+   color: rgba(255, 255, 255, .75);
+   font-size: 2.5rem;
+}
+
+/* Color Matching game*/
+#container {
+   max-width: 500px;
+   margin: 0 auto;
+   padding-top: 20px;
+}
+
+.square {
+   width: 30%;
+   height: 150px;
+   background-color: purple;
+   padding-bottom: 20px;
+   float: left;
+   margin: 1.5%;
+}
+
+#color-display {
+   display: block;
+   font-size: 1em;
+}
+
+#stripe {
+   background: white;
+   height: 30px;
+   text-align: center;
+   color: black;
+   padding: 0;
+}
+#message {
+   text-transform: uppercase;
+   color: black;
+   font-size: 1em;
+   display: inline-block;
+   width: 20%;
+}
+.button {
+    outline: none;
+    color: grey;
+    font-family: Sans-serif;
+    font-size: 1em;
+    background-color: white;
+    height: 100%;
+}
+
+button:hover {
+   background-color: grey;
+   color:white;
+}
+.square {
+border-radius: 20%;
+}
+.selected {
+   background-color: gray;
+   color: white;
+   margin: 0;
+}
+.img-container {
+   position: relative;
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   margin:  0 auto;
+   margin-bottom: 1.5rem;
+}
+#person-img {
+   width: 100%;
+   display: block;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+   position: relative;
+}
